@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="whole_page">
+        <div class="center long-height">
+            <div class="head">
+                <div class="logo">
+                    <img src="images/nysl_logo.png" alt="">
+                </div>
+                <div class="site-name">
+                    <p>Northside Youth Soccer League</p>
+                </div>
+                <div class="menu-bar">
+                    <div class="home menu-item">
+                        <a href="home.html">Home</a>
+                    </div>
+                    <div class="about menu-item">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="contact menu-item">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="game-info menu-item">
+                        <a href="game-info.html">Game info</a>
+                    </div>
+                    <div class=" rules menu-item">
+                        <a href="rules.html">Rules</a>
+                    </div>
+                    <div class="registration-form  menu-item">
+                        <a href="registration.html">Registration</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="text">
+                    <h1>Registration Form</h1>
+                    <div class="form-wrapper">
+                        <form action="post">
+                            <div class="row">
+                                <div class="input-wrapper">
+                                    <label for="name">Player’s First Name:</label>
+                                    <input type="text" id="name">
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="last-name">Last Name:</label>
+                                    <input type="text" id="last-name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper single">
+                                    <label for="address">Street Address:</label>
+                                    <input type="text" id="address">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper">
+                                    <label for="city">City:</label>
+                                    <input type="text" id="city">
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="code">Zip Code:</label>
+                                    <input type="text" id="code">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper">
+                                    <label >Birth Date (mm/dd/yyyy):</label>
+                                    <input type="date" class="date-drop-down">
+                                </div>
+                                <div class="checkbox-wrapper">
+                                    <span>Gender : </span>
+                                    <div class="check-box">
+                                        <input type="radio" id="fmale">
+                                        <label for="fmale">Female</label>
+                                    </div>
+                                    <div class="check-box">
+                                        <input type="radio" id="male">
+                                        <label for="male">Male</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="checkbox-wrapper">
+                                    <span>Grade</span>
+                                    <div class="grade-checkbox grade-checkbox-pre">
+                                        <input type="radio" id="pre-school">
+                                        <label for="pre-school">Pre-School</label>
+                                    </div>
+                                    <div class="grade-checkbox">
+                                        <input type="radio" id="1st">
+                                        <label for="1st">1 <span>st</span></label>
+                                    </div>
+                                    <div class="grade-checkbox">
+                                        <input type="radio" id="2nd">
+                                        <label for="2nd">2 <span>nd</span></label>
+                                    </div>
+                                    <div class="grade-checkbox">
+                                        <input type="radio" id="3rd">
+                                        <label for="3rd">3 <span>rd</span></label>
+                                    </div>
+                                    <div class="grade-checkbox">
+                                        <input type="radio" id="4th">
+                                        <label for="4th">4 <span>th</span></label>
+                                    </div>
+                                    <div class="grade-checkbox">
+                                        <input type="radio" id="5th">
+                                        <label for="5th">5 <span>th</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper single">
+                                    <label for="parent">Parent/Guardian:</label>
+                                    <input type="text" id="parent">
+                                </div>
+                            </div>
+                            <div class="row last-row">
+                                <div class="input-wrapper">
+                                    <label for="contact-phone">Contact Phone:</label>
+                                    <input type="text" id="contact-phone">
+                                </div>
+                                <div class="input-wrapper">
+                                    <label for="contact-email">Contact Email:</label>
+                                    <input type="text" id="contact-email">
+                                </div>
+                                </div>
+                            <div class="row">
+                                <div class="input-wrapper single">
+                                   <h4>Which elementary schools do you live near?</h4>
+                                </div>
+                             </div>    
+                             <div class="row">
+                                <div class="input-wrapper">
+                                    <h4>First Closest School:</h4>
+                                    <select name="first-location" class="drop-down-school">
+                                        <option value="selected" selected>Please select a school</option>
+                                        <option value="katzenmaier">AJ Katzenmaier</option>
+                                        <option value="marjorie">Marjorie P Hart</option>
+                                        <option value="greenby">Greenbay</option>
+                                        <option value="north">North Elementary</option>
+                                        <option value="howard">Howard A Yeager</option>
+                                        <option value="south">South Elementary</option>
+                                      </select>
+                                </div>
+                                <div class="input-wrapper" >
+                                    <h4>Second Closest School:</h4>
+                                    <select name="second-location" class="drop-down-school">
+                                        <option value="selected" selected>Please select a school</option>
+                                        <option value="katzenmaier">AJ Katzenmaier</option>
+                                        <option value="marjorie">Marjorie P Hart</option>
+                                        <option value="greenby">Greenbay</option>
+                                        <option value="north">North Elementary</option>
+                                        <option value="howard">Howard A Yeager</option>
+                                        <option value="south">South Elementary</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >AJ Katzenmaier</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox"  id="mph">
+                                        <label >Marjorie P Hart</label>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >AJ Katzenmaier</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox">
+                                        <label >Marjorie P Hart</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >Greenbay</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >North Elementary</label>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >Greenbay</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label>North Elementary</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row last-row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >Howard A Yeager</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >South Elementary</label>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >Howard A Yeager</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >South Elementary</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper single">
+                                   <h4>What position(s) do you normally play?</h4>
+                                   <h5>(check all that apply)</h5>
+                                </div>
+                             </div>  
+                             <div class="row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label>Forward</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label>Midfield</label>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="row last-row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >Defense</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox">
+                                        <label>Goalkeeper</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper single">
+                                   <h4>What position(s) do you want to play? </h4>
+                                   <h5>(check all that apply)</h5>
+                                </div>
+                             </div>  
+                             <div class="row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox">
+                                        <label>Forward</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox">
+                                        <label >Midfield</label>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="row last-row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label >Defense</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="checkbox" >
+                                        <label>Goalkeeper</label>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="input-wrapper single">
+                                    <input type="checkbox">
+                                   <strong>Already Have a Uniform</strong>
+                                </div>
+                             </div>  
+                            <div class="row">
+                                <div class="input-wrapper">
+                                    <h4>Jersey Size:</h4>
+                                </div>
+                                <div class="input-wrapper">
+                                    <h4>Shorts Size:</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label>Youth Small</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="radio" >
+                                        <label>Medium</label>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label>Youth Small</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label >Medium</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label>Youth Medium</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label>Large</label>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label>Youth Medium</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label>Large</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label >Youth Large</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label>Extra-Large</label>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="radio" >
+                                        <label >Youth Large</label>
+                                    </div>
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label >Extra-Large</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row last-row">
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label>Small</label>
+                                    </div>   
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="input-wrapper">
+                                        <input type="radio">
+                                        <label >Small</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper single">
+                                    <h4 class="underline">Permission to Play</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper single">
+                                    <h5>I, the parent or guardian of the minor registrant, agree that the registrant and 
+                                        I will abide by all the rules of the Northside Youth Soccer League (NYSL). In 
+                                        recognizing the possibility of physical injury associated with soccer and in
+                                         consideration for the “League” accepting the registrant for its soccer programs
+                                          and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, 
+                                          their employees and associated personnel and volunteers, including the facilities 
+                                          used for practices and games, against any claim by or on behalf of the registrant 
+                                          as a result of the </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper single">
+                                    <h5>By signing below, I hereby agree and authorize the above. In addition, by signing below,
+                                         I also acknowledge that I have read the cancellation policy and agr</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper signature">
+                                    <label>Parent/Guardian Signature: </label>
+                                    <input type="text">
+                                </div>
+                                <div class="input-wrapper date">
+                                    <label>Date:</label>
+                                    <input type="date" class="date-drop-down">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-wrapper single sub-center">
+                                    <button type="submit" class="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
