@@ -3,7 +3,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </head>
 <body>
     <!-- use 'this-format' for all css classes -->
@@ -37,7 +48,29 @@
                         <a href="registration.html">Registration</a>
                     </div>
                 </div>
+                
             </div>
+            <div class="mobile-menu-bar">
+            <img class="mobile-logo" src="images/nysl_logo.png" alt="Logo">
+            <div class="mobile-site-name">
+                <p>Northside Youth Soccer League</p>
+            </div>
+            
+                <div class="topnav">
+                    <a href="#home" class="active"></a>
+                    <div id="myLinks">
+                      <a href="home.html">Home</a>
+                      <a href="game-info.html">Game info</a>
+                      <a href="rules.html">Rules</a>
+                      <a href="registration.html">Registration</a>
+                      <a href="about.html">About</a>
+                      <a href="contact.html">Contact</a>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+            </div>
+        </div>
             <div class="content">
                 <div class="upcoming-title">
                     <p>Upcoming Events</p>
@@ -52,6 +85,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
 </body>
 </html>
