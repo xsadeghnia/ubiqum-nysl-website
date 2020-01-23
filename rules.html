@@ -14,6 +14,19 @@
             x.style.display = "block";
           }
         }
+
+        function openDropBox(buttonId,divId){
+            var i = document.getElementById(divId);
+            var j = document.getElementById(buttonId);
+            if(i.style.display === "inline-block"){
+                i.style.display = "none";
+                j.textContent = "+";
+            }else{
+                i.style.display = "inline-block";
+                j.textContent = "-";
+            }
+        }
+
         </script>
 </head>
 <body id="body">
@@ -76,15 +89,20 @@
                             <h4>FIFA rules shall govern NYSL play except as modified herein.</h4>
                         </div>
                         <div class="ruless">
+                            <button class="drop-down-button" id="sportBt" onclick="openDropBox('sportBt','sportDv')">+</button>
                             <h3>SPORTSMANSHIP</h3>
-                            <ul class="squer-style">
-                                <li>The common interest that members of the Association share is to inspire
+                            <div class="drop-down-content" id="sportDv">
+                                <ul class="squer-style">
+                                    <li>The common interest that members of the Association share is to inspire
                                      youth to practice the ideals of sportsmanship and fair play. Any player,
                                       coach, team, parent, spectator, administrator or referee whose behavior
                                        detracts from this purpose is subject to disciplinary action regardless of
                                         technical soccer background, expertise, accomplishments or standing.</li>
-                            </ul>
+                                </ul>
+                            </div>
+                            <button class="drop-down-button" id="fifaBt" onclick="openDropBox('fifaBt','fifaDv')">+</button>
                             <h3>FIFA FIELD REGULATIONS</h3>
+                            <div class="drop-down-content" id="fifaDv">
                             <ol>
                                 <li><strong>DIMENSIONS.</strong>FIFALaw1providesforflexibleexternalfield dimensions
                                     within a given maximum and minimum width and length. These
@@ -149,13 +167,19 @@
                                     </ul>
                                 </li>
                             </ol>
+                        </div>
+                        <button class="drop-down-button" id="equipmentBt" onclick="openDropBox('equipmentBt','equipmentDv')">+</button>
                            <h3>EQUIPMENT</h3> 
+                           <div class="drop-down-content" id="equipmentDv">
                             <ul class="squer-style">
                                 <li>We will abide by and accept equipment standards as defined by FIFA, 
                                     USSF and USYSA.
                                 </li>
                             </ul>
+                        </div>
+                        <button class="drop-down-button" id="playersBt" onclick="openDropBox('playersBt','playersDv')">+</button>
                             <h3>NUMBER OF PLAYERS</h3> 
+                            <div class="drop-down-content" id="playersDv">
                             <ul class="squer-style">
                                 <li><strong>TEAM SIZE.</strong>Except as noted below, team rosters shall consist of not less
                                     than eleven nor more than eighteen players. A team must have at least seven (7) players present and able to play 
@@ -172,7 +196,10 @@
                                      are strongly encouraged to play small-sided games on reduced field size.
                                 </li>
                             </ul>
+                        </div>
+                        <button class="drop-down-button" id="subsituBt" onclick="openDropBox('subsituBt','subsituDv')">+</button>
                             <h3>SUBSTITUTIONS</h3>
+                            <div class="drop-down-content" id="subsituDv">
                             <ul class="squer-style">
                                 <li>Teams may make an unlimited number of substitutions at the times indicated below. A player who has been 
                                     replaced may re-enter the game as a substitute at a later time.
@@ -187,7 +214,10 @@
                                     </ol>
                                 </li>
                             </ul>
+                        </div>
+                        <button class="drop-down-button" id="confiscatedBt" onclick="openDropBox('confiscatedBt','confiscatedDv')">+</button>
                             <h3>CONFISCATED PLAYER PASSES</h3>
+                            <div class="drop-down-content" id="confiscatedDv">
                             <ul class="squer-style">
                                 <li>Passes of any individual(s) ejected from any match shall be retained after the match by the referee.
                                      The pass of any individual who has received a third caution (yellow card) during a playing year shall 
@@ -200,7 +230,10 @@
                                         within forty-eight (48) hours of the conclusion of the match.
                                 </li>
                             </ul>
+                        </div>
+                        <button class="drop-down-button" id="allPlayBt" onclick="openDropBox('allPlayBt','allPlayDv')">+</button>
                             <h3>ALL-PLAY</h3>
+                            <div class="drop-down-content" id="allPlayDv">
                             <ul class="squer-style">
                                 <li>All-play means that every recreation player on every team shall play at least
                                      fifty percent of each game. Coaches in the competition program are encouraged to play their players
@@ -213,13 +246,19 @@
                                       </ul>
                                 </li>
                             </ul>
+                        </div>
+                        <button class="drop-down-button" id="playersEqBt" onclick="openDropBox('playersEqBt','playersEqDv')">+</button>
                             <h3>PLAYERS’ EQUIPMENT</h3>
+                            <div class="drop-down-content" id="playersEqDv">
                             <ul class="squer-style">
                                 <li>Where the uniform colors of both teams are so similar that the referee orders
                                      a change, the designated home team must change to colors distinct from those of the opponent.
                                 </li>
                             </ul> 
+                        </div>
+                        <button class="drop-down-button" id="mixTeamBt" onclick="openDropBox('mixTeamBt','mixTeamDv')">+</button>
                             <h3>MIXED TEAMS</h3>
+                            <div class="drop-down-content" id="mixTeamDv">
                             <ul class="squer-style">
                                 <li><strong>GIRLS PLAYING ON BOYS’ TEAMS.</strong>Girls are eligible to play
                                      on boys’teams with parent/guardian permission.
@@ -228,7 +267,10 @@
                                     are Boys Teams.
                                 </li>
                             </ul>
+                        </div>
+                            <button class="drop-down-button" id="coachingBt" onclick="openDropBox('coachingBt','coachingDv')">+</button>
                             <h3>COACHING FROM THE SIDELINES</h3>
+                            <div class="drop-down-content" id="coachingDv">
                             <ul class="squer-style">
                                 <li>Coaching from the sidelines, i.e., giving direction to one’s own team on points of 
                                     strategy and position, is permitted provided that:
@@ -244,7 +286,10 @@
                                     </ol>
                                 </li>
                             </ul>
+                        </div>
+                            <button class="drop-down-button" id="gameTermBt" onclick="openDropBox('gameTermBt','gameTermDv')">+</button>
                             <h3>GAME TERMINATION</h3>
+                            <div class="drop-down-content" id="gameTermDv">
                             <ul class="squer-style">
                                  <li>Any game terminated after 15 minutes into the second half by the referee
                                       by reason of the elements, or by reason of grave disorder on the part of the coaches, players
@@ -253,7 +298,10 @@
                                         will lose the game 1-0.
                                  </li>
                             </ul>
+                        </div>
+                            <button class="drop-down-button" id="conditionBt" onclick="openDropBox('conditionBt','conditionDv')">+</button>
                             <h3>CONDITIONS OF REPLAY OF GAMES</h3>
+                            <div class="drop-down-content" id="conditionDv">
                             <ul class="squer-style">
                                 <li>Any game which is required to be replayed as a result of any protest or appeal,
                                      shall be subject to the following conditions:
@@ -267,7 +315,10 @@
                                     </ol> 
                                 </li>
                             </ul>
+                        </div>
+                            <button class="drop-down-button" id="refereeBt" onclick="openDropBox('refereeBt','refereeDv')">+</button>
                             <h3>REFEREE RESPONSIBLITIES</h3>
+                            <div class="drop-down-content" id="refereeDv">
                             <ul class="squer-style">
                                  <li>The referee shall verify the identity of the players and coaches with 
                                      his/her player pass. He shall collect the passes of those players and coaches who are to 
@@ -292,6 +343,7 @@
                                  <li>Referees not complying with this section will be referred to the Disciplinary Committee.
                                  </li>
                             </ul>
+                        </div>
                             <p><a href="#body">Back to top</a></p>
                         </div>
                     </div>

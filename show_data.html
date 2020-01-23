@@ -1,20 +1,22 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Feedback Sent</title>
 <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="center validation-height">
-<p align=center>&nbsp;</p>
-<h1 align=center><font size="+1">The following information has been sent as your
-  feedback:</font></h1>
+<div class="center long-height">
+<p class="validation-center">&nbsp;</p>
+<p class="validation-center">The following information has been sent as your
+  feedback:</p>
 
-<table border="1" align=center  class="validation-table" width="426">
+<table  class="validation-table" >
   <tr>
-    <th align="center">Form Field</th>
-    <th align="center">Field Value</th>
+    <th >Form Field</th>
+    <th >Field Value</th>
   </tr>
-</div>
+
 <script language="javascript">
 var args = location.search.substr(1).split('&');
 for (var i = 0; i < args.length; ++i) {
@@ -65,8 +67,8 @@ and then click on "Settings...".)</li>
 
 </td></tr>
 </noscript>
-<p>Are the above information correct?</p>
 </table>
+<p class="validation-center question">Are the above information correct?</p>
 <div class="confirmation-button">
 <button onclick="yesFunction()" class="conf-button">Yes</button>
  <button onclick="noFunction()" class="conf-button">No</button>

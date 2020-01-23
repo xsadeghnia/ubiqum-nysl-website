@@ -14,7 +14,21 @@
             x.style.display = "block";
           }
         }
-        </script>
+        function disable() {
+            var x = document.getElementById("haveUniform");
+            var group = document.registrationForm.jersey;
+            if (x.checked == true){
+                for(var i=0; i<group.length; i++){
+                    group[i].disabled = true;
+                }
+            }else{
+                for(var i=0; i < group.length; i++){
+                    group[i].disabled = false;
+                }
+            }
+            
+        }
+     </script>
 </head>
 <body>
     <div class="whole_page">
@@ -72,7 +86,7 @@
                 <div class="text">
                     <h1>Registration Form</h1>
                     <div class="form-wrapper">
-                        <form method="GET" action="./show_data.html">
+                        <form name="registrationForm" method="GET" action="./show_data.html">
                             <div class="row">
                                 <div class="input-wrapper">
                                     <label >Player’s First Name:</label>
@@ -108,11 +122,11 @@
                                     <span>Gender : </span>
                                     <div class="check-box">
                                         <input type="radio" name="fmale">
-                                        <label for="fmale">Female</label>
+                                        <label>Female</label>
                                     </div>
                                     <div class="check-box">
                                         <input type="radio" name="male">
-                                        <label for="male">Male</label>
+                                        <label>Male</label>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +223,7 @@
                                         <label >AJ Katzenmaier</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="checkbox" name="name="marjorie-p-hart"">
+                                        <input type="checkbox" name="marjorie-p-hart">
                                         <label >Marjorie P Hart</label>
                                     </div>
                                 </div>
@@ -267,11 +281,11 @@
                              <div class="row">
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="checkbox" name="forward" >
+                                        <input type="checkbox" name="play" value="forward" >
                                         <label>Forward</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="checkbox" name="midfield" >
+                                        <input type="checkbox" name="play" value="midfield" >
                                         <label>Midfield</label>
                                     </div>
                                 </div>
@@ -279,11 +293,11 @@
                             <div class="row last-row">
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="checkbox"  name="defense">
+                                        <input type="checkbox"  name="play" value="defense">
                                         <label >Defense</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="checkbox" name="goalkeeper">
+                                        <input type="checkbox" name="play" value="goalkeeper">
                                         <label>Goalkeeper</label>
                                     </div>
                                 </div>
@@ -297,11 +311,11 @@
                              <div class="row">
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="checkbox" name="forward" >
+                                        <input type="checkbox" name="like" value="forward">
                                         <label>Forward</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="checkbox" name="midfield">
+                                        <input type="checkbox" name="like" value="midfield">
                                         <label >Midfield</label>
                                     </div>
                                 </div>
@@ -309,23 +323,23 @@
                             <div class="row last-row">
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="checkbox" name="defense" >
+                                        <input type="checkbox" name="like" value="defense">
                                         <label >Defense</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="checkbox" name="goalkeeper" >
+                                        <input type="checkbox" name="like" value="goalkeeper">
                                         <label>Goalkeeper</label>
                                     </div>
                                 </div>
                             </div> 
                             <div class="row">
                                 <div class="input-wrapper single">
-                                    <input type="checkbox" name="already-have-a-uniform">
+                                    <input type="checkbox" name="already-have-a-uniform" id="haveUniform" onclick="disable()">
                                    <strong>Already Have a Uniform</strong>
                                 </div>
                              </div>  
                             <div class="row">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper">  
                                     <h4>Jersey Size:</h4>
                                 </div>
                                 <div class="input-wrapper">
@@ -335,21 +349,21 @@
                             <div class="row">
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="radio" name="youth-small">
+                                        <input type="radio" value="youth-small" name="jersey" >
                                         <label>Youth Small</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="radio" name="medium" >
+                                        <input type="radio" value="medium" name="jersey">
                                         <label>Medium</label>
                                     </div>
                                 </div>
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="radio" name="youth-amall">
+                                        <input type="radio" value="youth-small" name="short">
                                         <label>Youth Small</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="radio" name="medium">
+                                        <input type="radio" value="medium" name="short">
                                         <label >Medium</label>
                                     </div>
                                 </div>
@@ -357,21 +371,21 @@
                             <div class="row">
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="radio" name="youth-medium">
+                                        <input type="radio" value="youth-medium" name="jersey">
                                         <label>Youth Medium</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="radio" name="large">
+                                        <input type="radio" value="large" name="jersey">
                                         <label>Large</label>
                                     </div>
                                 </div>
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="radio" name="medium">
+                                        <input type="radio" value="youth-medium" name="short">
                                         <label>Youth Medium</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="radio" name="large">
+                                        <input type="radio" value="large" name="short">
                                         <label>Large</label>
                                     </div>
                                 </div>
@@ -379,21 +393,21 @@
                             <div class="row">
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="radio" name="youth-large">
+                                        <input type="radio" value="youth-large" name="jersey">
                                         <label >Youth Large</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="radio" name="extra-large">
+                                        <input type="radio" value="extra-large" name="jersey">
                                         <label>Extra-Large</label>
                                     </div>
                                 </div>
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="radio" name="youth-large">
+                                        <input type="radio" value="youth-large" name="short">
                                         <label >Youth Large</label>
                                     </div>
                                     <div class="input-wrapper">
-                                        <input type="radio" name="extre-large">
+                                        <input type="radio" value="extre-large" name="short">
                                         <label >Extra-Large</label>
                                     </div>
                                 </div>
@@ -401,13 +415,13 @@
                             <div class="row last-row">
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="radio" name="small">
+                                        <input type="radio" value="small" name="jersey">
                                         <label>Small</label>
                                     </div>   
                                 </div>
                                 <div class="input-wrapper">
                                     <div class="input-wrapper">
-                                        <input type="radio" name="small">
+                                        <input type="radio" value="small" name="short">
                                         <label >Small</label>
                                     </div>
                                 </div>
