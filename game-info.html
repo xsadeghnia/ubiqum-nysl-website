@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </head>
 <body>
     <div class="whole_page">
@@ -33,6 +45,27 @@
                     <div class="registration-form  menu-item">
                         <a href="registration.html">Registration</a>
                     </div>
+                </div>
+            </div>
+            <div class="mobile-menu-bar">
+                <img class="mobile-logo" src="images/nysl_logo.png" alt="Logo">
+                <div class="mobile-site-name">
+                    <p>Northside Youth Soccer League</p>
+                </div>
+                
+                    <div class="topnav">
+                        <a href="home.html" class="active"></a>
+                        <div id="myLinks">
+                          <a href="home.html">Home</a>
+                          <a href="game-info.html">Game info</a>
+                          <a href="rules.html">Rules</a>
+                          <a href="registration.html">Registration</a>
+                          <a href="about.html">About</a>
+                          <a href="contact.html">Contact</a>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
                 </div>
             </div>
             <div class="content">
@@ -153,32 +186,32 @@
                     <tr>
                         <td>AJ Katzenmaier Elementary</td>
                         <td>24 W. Walton St., Chicago, IL 60610</td>
-                        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654060426178!2d-87.63123908483323!3d41.90029637200439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24%20W%20Walton%20St%2C%20Chicago%2C%20IL%2060610%2C%20USA!5e0!3m2!1sen!2snl!4v1579516398060!5m2!1sen!2snl" width="168" height="105" frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
+                        <td><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654060426178!2d-87.63123908483323!3d41.90029637200439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24%20W%20Walton%20St%2C%20Chicago%2C%20IL%2060610%2C%20USA!5e0!3m2!1sen!2snl!4v1579516398060!5m2!1sen!2snl"></iframe></td>
                     </tr >
                     <tr>
                         <td>Greenbay Elementary</td>
                         <td>1734 N. Orleans St., Chicago, IL 60614</td>
-                        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.025698674559!2d-87.64002798483283!3d41.91380627115846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734%20N%20Orleans%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2snl!4v1579517958769!5m2!1sen!2snl" width="168" height="105" frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
+                        <td><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.025698674559!2d-87.64002798483283!3d41.91380627115846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734%20N%20Orleans%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2snl!4v1579517958769!5m2!1sen!2snl"></iframe></td>
                     </tr>
                     <tr>
                         <td>Howard A Yeager Elementary</td>
                         <td>2245 N. Southport Ave., Chicago, IL 60614</td>
-                        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.585497384698!2d-87.66511458483251!3d41.92326857056586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245%20N%20Southport%20Ave%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2snl!4v1579518314676!5m2!1sen!2snl" width="168" height="105" frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
+                        <td><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.585497384698!2d-87.66511458483251!3d41.92326857056586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245%20N%20Southport%20Ave%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2snl!4v1579518314676!5m2!1sen!2snl"></iframe></td>
                     </tr>
                     <tr>
                         <td>Marjorie P Hart Elementary</td>
                         <td>2625 N. Orchard St., Chicago, IL 60614</td>
-                        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.291728953103!2d-87.64808628483233!3d41.92958227017038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625%20N%20Orchard%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2snl!4v1579518470873!5m2!1sen!2snl" width="168" height="105" frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
+                        <td><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.291728953103!2d-87.64808628483233!3d41.92958227017038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625%20N%20Orchard%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2snl!4v1579518470873!5m2!1sen!2snl"></iframe></td>
                     </tr>
                     <tr>
                         <td>North Elementary</td>
                         <td>1409 N. Ogden Ave., Chicago, IL 60610</td>
-                        <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3375536949948!2d-87.64837698483302!3d41.90710177157822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af0e6ccc3%3A0x26c81c1d557667da!2s1409%20N%20Ogden%20Ave%2C%20Chicago%2C%20IL%2060610%2C%20USA!5e0!3m2!1sen!2snl!4v1579518525976!5m2!1sen!2snl" width="168" height="105" frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
+                        <td><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.3375536949948!2d-87.64837698483302!3d41.90710177157822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af0e6ccc3%3A0x26c81c1d557667da!2s1409%20N%20Ogden%20Ave%2C%20Chicago%2C%20IL%2060610%2C%20USA!5e0!3m2!1sen!2snl!4v1579518525976!5m2!1sen!2snl"></iframe></td>
                     </tr>
                     <tr>
                         <td class="last-td">South Elementary</td>
                         <td class="last-td">2101 N. Fremont St., Chicago, IL 60614</td>
-                        <td class="last-td"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7477648265876!2d-87.65355538483266!3d41.91978077078424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101%20N%20Fremont%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2snl!4v1579518586891!5m2!1sen!2snl" width="168" height="105" frameborder="0" style="border:0;" allowfullscreen=""></iframe></td>
+                        <td class="last-td"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.7477648265876!2d-87.65355538483266!3d41.91978077078424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101%20N%20Fremont%20St%2C%20Chicago%2C%20IL%2060614%2C%20USA!5e0!3m2!1sen!2snl!4v1579518586891!5m2!1sen!2snl"></iframe></td>
                     </tr>
                 </table>
                 <p class="footer"><strong>Facility Type:</strong>Outdoor <br><br> <strong>Additional Information:</strong> If deemed necessary by NYSL, games may be shortened or 
